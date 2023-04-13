@@ -80,7 +80,6 @@ export const ProductDetail = ({ open, onClose, product}: ProductDetailProps) => 
       }
     }
     setCookie('basketCookie', basketObject)
-    console.log(cookies.basketCookie)
   }
 
 

@@ -73,11 +73,10 @@ export const OrderChecker = () => {
     const ordersArray : ordersArray = Object.entries(ordersObject);
     const customers = ordersArray.map(array => {
         return array[0]
-    })
+    });
     const customerAddress = ordersArray.map(array=>{
             return array[1][0].address
-    })
-    console.log(customers, customerAddress)
+    });
 
     const totalArr: number[]  = []
 
@@ -90,11 +89,9 @@ export const OrderChecker = () => {
         address: string
 
     }
-    console.log(ordersArray, 'to jest ordersArray')
     const drawArray: DrawItem[] = [];
         ordersArray.forEach((array,i) => {
             if ((array[1] && array[1].length > i)){
-                console.log(array[1][i].uuid,'uuid here')
                 drawArray.push({
                     uuid: array[1][i].uuid,
                     product: array[1][i].product,
@@ -107,10 +104,8 @@ export const OrderChecker = () => {
             })
 
 
-    console.log({drawArray}, 'to jest draw')
     drawArray.forEach(subArray => {
         const total: number = Number((subArray.amount * subArray.unit_price).toFixed(2));
-        console.log(total, 'total1')
         const tempArr: number[] = []
         tempArr.push(total)
 

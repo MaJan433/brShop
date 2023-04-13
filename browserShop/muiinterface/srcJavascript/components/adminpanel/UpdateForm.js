@@ -21,7 +21,7 @@ export const UpdateForm = () => {
     })
     const location = useLocation()
     const uuid = location.pathname.split('/')[2]
-    console.log(uuid)
+
 
     const updateProduct = async () => {
             

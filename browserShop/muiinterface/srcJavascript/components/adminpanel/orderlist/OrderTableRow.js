@@ -16,9 +16,9 @@ import {Box} from "@mui/system";
 
 export const OrderTableRow = (props) => {
 
-    console.log(props, 'poszukiwane propsy')
+
     const [open, setOpen] = useState(false)
-    console.log(props.view[props.customer], 'props wjew')
+
 
     return(
         <>

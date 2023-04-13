@@ -14,7 +14,6 @@ export const AppbarDesktop = ({matches}) => {
 
     const {gridRef, setGridRef, contactRef, setContactRef} = useContext(RefContext);
     const {drawerOpen, setDrawerOpen} = UseUIContext();
-    console.log(gridRef, contactRef, 'tu sa refy')
 
     const scrollToProducts = () => {
 

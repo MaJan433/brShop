@@ -15,7 +15,7 @@ export const BasketList = () => {
     const smallScreen = useMediaQuery((theme) => theme.breakpoints.down('md'));
     if (cookies.basketCookie) {
         const basketArr = Object.entries(cookies.basketCookie)
-        console.log(basketArr)
+
         if (basketOpen){
             return (
                 <>

@@ -16,7 +16,7 @@ export const OrderTableRow = (props) => {
     useEffect(()=>{
 
     })
-    console.log(props, 'src testowe')
+
     const history = createBrowserHistory();
     const {items, setItems} = useContext(ItemContext)
 

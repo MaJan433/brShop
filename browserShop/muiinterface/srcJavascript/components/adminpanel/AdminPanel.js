@@ -32,7 +32,7 @@ export const AdminTable = () => {
 
 
     const {items, setItems} = useContext(ItemContext)
-    console.log(items, 'itemsy')
+
     const [cookies, setCookies, removeCookies] = useCookies(['adminPanelCookie'])
     const {adminLogged, setAdminLogged, openAddUserPanel, setOpenAddUserPanel, openOrderPanel, setOpenOrderPanel} = useContext(AdminContext)
 

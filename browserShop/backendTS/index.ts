@@ -11,6 +11,3 @@ const mainRouter = new MainRouter()
 app.use('/', mainRouter.router)
 app.listen(PORT, 'localhost')
 
-// app.use(cors({
-//     origin:'http://locahost:3002/test'
-// }));

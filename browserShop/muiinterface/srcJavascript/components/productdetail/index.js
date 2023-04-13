@@ -41,7 +41,7 @@ const ProductDetailInfoWrapper = styled(Box)(() => ({
 
 export const ProductDetail = ({ open, onClose, product}) => {
 
-    console.log(product, 'to jest produkt')
+
 
   //
     const [cookies, setCookie] = useCookies(['basketCookie']);
@@ -60,10 +60,9 @@ export const ProductDetail = ({ open, onClose, product}) => {
       }
     }
     setCookie('basketCookie', basketObject)
-    console.log(cookies.basketCookie)
+
   }
-  console.log(cookies.basketCookie)
-  console.log(product.name)
+
 
   return (
     <Dialog

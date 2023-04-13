@@ -47,7 +47,7 @@ export const AppDrawer = () => {
     const {drawerOpen, setDrawerOpen} = UseUIContext();
     const {search,minPrice,maxPrice,setSearch,setMinPrice,setMaxPrice, category,setCategory} = useContext(SearchContext)
 
-    console.log({search, minPrice, maxPrice, category})
+
 
 
     useEffect(()=>{

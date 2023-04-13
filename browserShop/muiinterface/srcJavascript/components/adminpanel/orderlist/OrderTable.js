@@ -44,25 +44,23 @@ export const OrderChecker = () => {
             }
         }
     }
-    console.log(ordersObject)
+
     const ordersArray = Object.entries(ordersObject);
-    console.log({ordersArray}, 'to jest oa')
+
     const customers = ordersArray.map(array => {
         return array[0]
     })
     const customerAddress = ordersArray.map(array=>{
             return array[1][0].address
     })
-    console.log(customers, customerAddress)
     const drawArray = []
     const totalArr = []
 
     ordersArray.forEach(array=> {
-        console.log(array[1], 'to tux')
+
         drawArray.push(array[1])
     });
-    console.log({drawArray}, 'to jest draw')
-    console.log(ordersArray, 'to tu')
+
     drawArray.forEach(subArray => {
         const tempArr = []
             subArray.forEach(object=> {
@@ -74,9 +72,9 @@ export const OrderChecker = () => {
         },0)
         totalArr.push(value)
     })
-    console.log({customers, customerAddress, totalArr})
 
-    console.log(totalArr)
+
+
     //
     const rows = customers.map((customer, i) =>  {
         return (

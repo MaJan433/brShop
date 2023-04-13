@@ -59,7 +59,7 @@ export const LoginPanel = () => {
 
     const handleLogin = async () => {
 
-        console.log({loginUserName,loginPassword})
+
         const res = await fetch(`${apiUrl}/User/login`, {
             method: 'POST',
             body: JSON.stringify({
@@ -117,7 +117,7 @@ export const LoginPanel = () => {
         const location = 'abc'
         const orderObject = {}
         orderObject.orders = cookies.basketCookie
-        console.log(cookies.basketCookie)
+
         orderObject.user = user
         orderObject.location = location
 

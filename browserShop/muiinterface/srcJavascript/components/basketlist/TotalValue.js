@@ -10,7 +10,7 @@ export const TotalValue = () => {
     const [cookies, setCookies] = useCookies(['basketCookie'])
 
     const basketObject = Object.values(cookies.basketCookie)
-    console.log({basketObject}, 'to ten jest obiekt')
+
     let totalValue = Number(0)
     basketObject.forEach(row => {
         const amount = Number(row.amount)

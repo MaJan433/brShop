@@ -30,10 +30,7 @@ interface Props {
 
 export const OrderTableRow = (props: Props) => {
 
-    console.log(props, 'poszukiwane propsy')
     const [open, setOpen] = useState(false)
-    console.log(props.view[props.customer], 'props wjew')
-    console.log(props.view[0], 'tutajto')
 
     if (props.totalValue !== undefined && props.view[props.customer] !== undefined){
         return(

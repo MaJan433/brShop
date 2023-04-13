@@ -51,7 +51,6 @@ export const Products = () => {
             }
         }
         setCookie('basketCookie', basketObject)
-        console.log(cookies.basketCookie)
     }
 
     const renderProducts = items.map((product) => (

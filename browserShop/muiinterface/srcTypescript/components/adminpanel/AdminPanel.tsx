@@ -46,7 +46,6 @@ export const AdminTable = () => {
 
     const [cookies, setCookies, removeCookies] = useCookies(['adminPanelCookie'])
     const {items, setItems} = useContext(ItemContext)
-    console.log(items, 'tu sa itemsy')
     const {adminLogged, setAdminLogged, openAddUserPanel, setOpenAddUserPanel, openOrderPanel, setOpenOrderPanel} = useContext(AdminContext)
     const itemsWithType: itemsType[]  = items
 

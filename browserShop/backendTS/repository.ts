@@ -20,12 +20,12 @@ export class DatabaseFunctions {
 
     public static async get_users(){
         const [result] = await pool.execute('SELECT * FROM `users`')
-        return result
-    }
+        return result;
+    };
 
     public static async get_orders(){
         const [result] = await pool.execute('SELECT * FROM `basket_orders`')
-        return result
+        return result;
     };
     public static async update_product(object: updateProductJSON){
         const [result] =  await pool.execute('UPDATE `main_table` SET `uuid`=:uuid, `name`=:name, `price`=:price, `lat`=:lat, `lon`=:lon, `photo`=:photo, `amount`=:amount, `cat`=:cat WHERE `uuid`= :uuid', {
@@ -58,13 +58,13 @@ export class DatabaseFunctions {
     };
 
     public static async select_all() {
-        const [result] = await pool.execute('SELECT * FROM `main_table`')
-        return result
+        const [result] = await pool.execute('SELECT * FROM `main_table`');
+        return result;
     };
 
     public static async show_basket() {
-        const [result] = await pool.execute('SELECT * FROM `basket`')
-        return result
+        const [result] = await pool.execute('SELECT * FROM `basket`');
+        return result;
     };
 
     public static async remove_product(uuid: string){
@@ -85,8 +85,8 @@ export class DatabaseFunctions {
             photo: object.photo,
             amount: object.amount,
             cat: object.cat
-        })
-    }
+        });
+    };
 
     public static async get_admin_hash() {
         const [hash] = await pool.execute('SELECT `password` FROM `admin_password`')
